@@ -1,0 +1,36 @@
+
+<div class="row">
+    <!-- *ngFor="let standing of standings.standings" -->
+
+    <div class="col-sm-3" *ngFor="let team of teams.teams" style="text-align: center">
+      <section>
+        {{team.name}}
+      </section>
+    </div>  
+</div>
+
+
+<div class="row">
+  <div class="col-sm-12" style="text-align: center;">
+    <h1>Santos FC</h1>
+    <img> 
+  </div>
+</div>
+
+<div class="teamContent">
+
+</div>
+
+<ul class="nav justify-content-center nav-tabs">
+    <li class="nav-item">
+      <button class="nav-link active" data-toggle="tab" routerLink="team">Players</button>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" routerLink="matches">Last Matches</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" routerLink="">H2H Rival</a>
+    </li>
+  </ul>
+
+<!-- <app-team [team]="selectedTeam"></app-team> -->

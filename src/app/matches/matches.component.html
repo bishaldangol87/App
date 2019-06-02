@@ -1,0 +1,100 @@
+<!-- <div class="row">
+  <div class="col-sm-12">
+    <table *ngFor="let match of matches">
+      <tr>
+        <th>Home Team</th>
+        <th>Score</th>
+        <th>Away Team</th>
+      </tr> -->
+      <!-- <tr *ngFor="let match of matches" [match]="match"> -->
+          <!-- <tr>
+        <td >{{ match.homeTeam.shortName }}</td> 
+        <td>
+          <div class="row">
+            <div class="homeTeamScore">{{ match.homeTeamScore }}</div> 
+            <div>-</div>
+            <div class="awayTeamScore">{{ match.awayTeamScore }}</div> 
+          </div>
+        </td>
+        <td>{{ match.awayTeam.shortName }}</td> 
+      </tr>
+    </table>
+  </div>
+</div> -->
+
+<div>
+  <h2 style="text-align: center">Matches</h2>
+  <div class="row">
+  <div class="col-lg-4">
+    <h3 style="text-align: center">finished</h3>
+    <ul>
+      <li>
+        <table>
+          <tr style="text-align: center">
+            <th>home team</th>
+            <th>Date</th>
+            <th>away team</th>
+          </tr>
+          <tr *ngFor="let match of finishedMatches.matches">
+            <td>{{match.homeTeam.name}}</td>
+            <td style="text-align: center">{{match.utcDate | date:'shortDate'}}</td>
+            <td style="text-align: right">{{match.awayTeam.name}}</td>
+          </tr>
+        </table>
+      </li>
+    </ul>
+  </div>
+
+  <div class="col-lg-4">
+    <h3 style="text-align: center">scheduled</h3>
+    <ul>
+      <li>
+        <table>
+          <tr style="text-align: center">
+            <th>home team</th>
+            <th>Date</th>
+            <th>away team</th>
+          </tr>
+          <tr *ngFor="let match of scheduledMatches.matches">
+            <td>{{match.homeTeam.name}}</td>
+            <td style="text-align: center">{{match.utcDate | date:'shortDate'}}</td>
+            <td style="text-align: right">{{match.awayTeam.name}}</td>
+          </tr>
+        </table>
+      </li>
+    </ul>
+  </div>
+  
+
+  <div class="col-lg-4">
+      <h3 style="text-align: center">last 5 matches</h3>
+      <ul>
+        <li>
+         
+          <table>
+            <tr style="text-align: center">
+              <th>home team</th>
+              <th>Date</th>
+              <th>away team</th>
+            </tr>
+            <tr *ngFor="let match of last5Matches.matches">
+              <td>{{match.homeTeam.name}}</td>
+              <td style="text-align: center">{{match.utcDate | date:'shortDate'}}</td>
+              <td style="text-align: right">{{match.awayTeam.name}}</td>
+            </tr>
+          </table>
+        </li>
+      </ul>
+    </div>
+
+</div> 
+</div>
+
+
+
+<!--<li class="items" *ngFor="let standing of standings.standings">
+      {{standing.stage}}
+      <div *ngFor="let table of standing.table">
+        {{table.position}} - {{table.team.name}}
+      </div>
+    </li> -->

@@ -1,0 +1,43 @@
+<div id="LeagueTableDiv">
+
+  <h2>League Table</h2>
+  
+ <ul>
+    <li class="items" *ngFor="let standing of standings.standings">
+      {{standing.stage}}
+      <div *ngFor="let table of standing.table">
+        {{table.position}} - {{table.team.name}}
+      </div>
+    </li>
+  </ul>
+
+</div>
+<!--
+<table >
+  <tr style="background-color:#b2b2b2 ">
+      <th>Ranking</th> 
+      <th>Club</th>
+      <th>Played Games</th>
+      <th>Won</th>
+      <th>Draw</th>
+      <th>Lost</th>
+      <th>Goals For</th>
+      <th>Goals Against</th>
+      <th>Goal Difference</th>
+      <th>Points</th>
+    </tr>
+
+<tr *ngFor = "let item of table" style="align: center">
+  <td >{{item.position}}</td>
+  <td>{{item.team.name}}</td>
+  <td>{{item.playedGames}}</td>
+  <td>{{item.won}}</td>
+  <td>{{item.draw}}</td>
+  <td>{{item.lost}}</td>
+ <td>{{item.goalsFor}}</td>
+  <td>{{item.goalsAgainst}}</td>
+  <td>{{item.goalDifference}}</td>
+  <td>{{item.points}}</td>
+
+</tr>
+</table>-->

@@ -1,0 +1,59 @@
+<!-- <div class="row">
+  <div class="col-sm-12">
+    <div class="text-center">
+      <img src="..." class="rounded" alt="...">   
+      <br>
+
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-12">
+    Team Name: {{ team.name }}
+    <br>
+    Team Address: {{ team.address }}
+    <br>
+    Phone No: {{ team.phone }}
+    <br>
+    Team Website: {{ team.website }}
+    <br>
+    email: {{ team.email }}
+  </div>
+</div> -->
+
+<!-- <div class="row">
+ 
+  <div class="col-sm-12">
+    <table>
+      <tr>
+        <th>Player Name</th>
+        <th>Position</th>
+      </tr>
+      <tr *ngFor="let player of players">
+        <td>{{ player.name }}</td>
+        <td>{{ player.position }}</td>
+      </tr>
+    </table>
+  </div>
+
+</div> -->
+
+<h2>PLAYERS</h2>
+<ul>
+    <li >
+      <!--{{match.awayTeam.name}}-->
+      <table>
+        <tr>
+          <th>player name</th>
+          <th>position</th>
+        </tr>
+        <tr *ngFor="let player of team.squad">
+          <td>{{player.name}}</td>
+          <td>{{player.position}}</td>
+        </tr>
+      
+      </table>
+      
+    </li>
+  </ul>

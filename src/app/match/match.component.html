@@ -1,0 +1,34 @@
+<div class="row">
+  <div class="col-sm-12">
+    <div class="col-sm-6">
+      <h4>{{ match.homeTeam.name }}</h4>
+      <table>
+        <tr>
+          <th>Players</th>
+          <th>Position</th>
+          <th>Shirt No.</th>
+        </tr>
+        <tr>
+          <td>{{ match.homeTeam.lineup.name}}</td>
+          <td>{{ match.homeTeam.lineup.position}}</td>
+          <td>{{ match.homeTeam.lineup.shirtNumber}}</td>
+        </tr>
+      </table>
+    </div>
+    <div class="col-sm-6">
+      <h4>{{ match.awayTeam.name }}</h4>
+      <table>
+        <tr>
+          <th>Players</th>
+          <th>Position</th>
+          <th>Shirt No.</th>
+        </tr>
+        <tr>
+          <td>{{ match.awayTeam.lineup.name}}</td>
+          <td>{{ match.awayTeam.lineup.position}}</td>
+          <td>{{ match.awayTeam.lineup.shirtNumber}}</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
